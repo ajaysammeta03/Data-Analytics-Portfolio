@@ -1,0 +1,49 @@
+ Uber Ride Data Analysis | SQL + Power BI Project
+
+Overview
+This project analyzes Uber ride data to uncover patterns in customer behavior, operational performance, revenue trends, cancellations, and the impact of weather and events.
+
+It uses SQL for data transformation and Power BI for visualization, combining data cleaning, feature engineering, and insight storytelling.
+
+Objectives
+- Clean and structure raw Uber ride data.
+- Create derived features for trip performance and fare analysis.
+- Analyze cancellation patterns, surge pricing, and zone-level KPIs.
+- Enrich rides with weather and event context.
+- Visualize actionable insights in Power BI.
+
+
+Tools Used
+- SQL (MySQL) – data cleaning and analysis
+- Power BI – dashboard development
+- Excel – initial data format
+- MS Word – documentation
+
+Dashboard Insights
+- Total Rides: 19.5K | Revenue: ₹1.5M
+- Completion Rate: 49.31%
+- Top Cancellation Zone: Gachibowli
+- Surge Pricing Zone: Hitec City
+- Rush Hour Peaks: 8–10 AM & 5–8 PM
+- Rain & Event days increase cancellation and fare
+- Weekdays dominate ride activity (86%)
+
+Feature Engineering
+- `fare_per_km`
+- `average_speed_kmh`
+- `is_rush_hour`, `is_event_day`
+- `duration_deviation_minutes`
+- `day_type` (Weekday/Weekend)
+
+Business Insights
+- Gachibowli has the highest cancellation rate.
+- Event and rain impact ride reliability and fare.
+- Hitec City shows the most frequent surge activity.
+- Most rides occur on weekdays, especially Monday & Thursday.
+
+
+About Me
+Hi, I'm Ajay Sammeta, a data analytics enthusiast with a background in Electronics and Communication Engineering. This project reflects my skills in SQL,  visualization, and insight generation.
+
+Email: ajaysammeta03@gmail.com  
+LinkedIn: [linkedin.com/in/ajay-sammeta-6b1369237](https://www.linkedin.com/in/ajay-sammeta-6b1369237)

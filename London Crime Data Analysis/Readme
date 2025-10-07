@@ -1,40 +1,41 @@
 London Crime Data Analysis – BigQuery SQL Queries
 
-This repository contains a collection of SQL queries analyzing the London Crime public dataset using Google BigQuery. The queries were written as part of a practice project to sharpen SQL and analytical skills and explore crime patterns in London.
+This repository contains a collection of SQL queries analyzing the London Crime public dataset using Google BigQuery.
+The queries were written as part of a practice project to sharpen SQL and analytical skills and explore crime patterns in London.
 
 Dataset
-Source: bigquery-public-data.london_crime.crime_by_lsoa
-Description: Contains crime records in London, broken down by boroughs, crime types, year, and month.
+	Source: bigquery-public-data.london_crime.crime_by_lsoa
+	Description: Contains crime records in London, broken down by boroughs, crime types, year, and month.
 
 Project Goals
-Move beyond simple SQL queries to answer complex analytical questions.
-Identify trends in crime across boroughs, years, months, and crime categories.
-Demonstrate the use of Common Table Expressions (CTEs), window functions (RANK(), LAG()), and aggregations in BigQuery.
+	Move beyond simple SQL queries to answer complex analytical questions.
+	Identify trends in crime across boroughs, years, months, and crime categories.
+	Demonstrate the use of Common Table Expressions (CTEs), window functions (RANK(), LAG()), and aggregations in BigQuery.
 
-Key Questions Addressed
-Total crimes recorded in London each year
-Year with the highest total crimes
-Top 10 boroughs by total crime count
-Month with the highest crime rate overall
-Number of unique boroughs
-Most common major crime categories
-Borough with the lowest number of recorded crimes
-Percentage of crimes from “Theft and Handling”
-Trends of “Violence Against the Person” over time
-Total crimes in 2016
-Top 5 boroughs for each major crime category
-Yearly crime distribution for “Burglary”
-Boroughs with the highest increase in crime (2010–2016)
-Crime types increasing or decreasing over time
-Top 3 minor crime categories in 2016
-Top 5 safest boroughs (lowest crime per year)
-Percentage of Violence vs. Theft crimes in 2015
-Seasonal crime variation (summer vs. winter)
-Borough with most Theft-related crimes in 2016
-Borough with largest year-on-year decrease in total crime
+Key Questions Addressed:
+	Total crimes recorded in London each year
+	Year with the highest total crimes
+	Top 10 boroughs by total crime count
+	Month with the highest crime rate overall
+	Number of unique boroughs
+	Most common major crime categories
+	Borough with the lowest number of recorded crimes
+	Percentage of crimes from “Theft and Handling”
+	Trends of “Violence Against the Person” over time
+	Total crimes in 2016
+	Top 5 boroughs for each major crime category
+	Yearly crime distribution for “Burglary”
+	Boroughs with the highest increase in crime (2010–2016)
+	Crime types increasing or decreasing over time
+	Top 3 minor crime categories in 2016
+	Top 5 safest boroughs (lowest crime per year)
+	Percentage of Violence vs. Theft crimes in 2015
+	Seasonal crime variation (summer vs. winter)
+	Borough with most Theft-related crimes in 2016
+	Borough with largest year-on-year decrease in total crime
 
 Technical Highlights:
-CTEs: Organize complex queries for readability and modularity.
-Window Functions: RANK(), LAG() used for ranking and year-over-year analysis.
-Aggregations: SUM(), COUNT(), ROUND(), and percentage calculations to summarize data.
-Time Intelligence: Analyzing trends over years, months, and seasons.
+	CTEs: Organize complex queries for readability and modularity.
+	Window Functions: RANK(), LAG() used for ranking and year-over-year analysis.
+	Aggregations: SUM(), COUNT(), ROUND(), and percentage calculations to summarize data.
+	Time Intelligence: Analyzing trends over years, months, and seasons.

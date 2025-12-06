@@ -1,0 +1,201 @@
+# 🚴‍♂️ RideIt – Analytics Dashboard
+
+RideIt is an end-to-end **Power BI analytics project** that analyzes driver activity, bookings, offers, cancellations, and marketing performance to understand and optimize a ride-hailing business.
+This dashboard helps stakeholders identify key operational metrics, marketing impact, high-performing drivers, and areas of improvement.
+
+
+## 📌 **Project Overview**
+
+This project focuses on analyzing a large-scale dataset containing:
+
+* Driver activity
+* Offers sent
+* Bookings completed
+* Rides completed
+* Cancellations
+* Marketing vs. Non-marketing performance
+
+The final output is a multi-page Power BI dashboard with detailed views for Drivers, Offers, Bookings, Ride Completion, Cancellations, and Marketing Effectiveness.
+
+## 🛠️ **Tools & Technologies**
+
+* **Power BI Desktop** (Primary tool)
+* **Excel / CSV / Big Query** source files
+* **DAX formulas** for KPI calculations
+* **Power Query** for data cleaning
+* **Data Modeling** (Star Schema)
+
+## 📊 **Dashboard Pages & Key Insights**
+
+### ### 1️⃣ **Drivers Page**
+
+**KPIs Extracted:**
+
+* **Total Drivers:** 36.77K
+* **Active Drivers:** 36.77K
+* **Zero Ride Drivers:** 205
+* **Weekly Active Drivers:** 18.70K
+* **Monthly Active Drivers:** 22.76K
+* **Drivers with 2 Services:** 201
+
+**Insights:**
+
+* Highest driver registrations occurred between 2016–2018.
+* Significant variation in monthly active drivers (12K–31K).
+* Top 10 drivers completed **16,002 rides** combined.
+* Marketing-accepted drivers: **26K**
+
+---
+
+### 2️⃣ **Offers Page**
+
+**KPIs:**
+
+* **Total Offers:** 25.38M
+* **Offer-to-Ride Rate:** 23.23%
+* **Offer-to-Booking Rate:** 28.39%
+* **Avg Offers per Driver:** 690
+
+**Breakdowns:**
+
+* Marketing drivers: **20.7M offers**
+* Non-marketing drivers: **4.6M offers**
+* Country-wise offers:
+
+  * Spain: 12.8M
+  * Germany: 12.5M
+
+**Insights:**
+
+* Most offers are influenced by marketing status.
+* Taxi services receive a significantly larger chunk of offers.
+
+---
+
+### 3️⃣ **Bookings Page**
+
+**KPIs:**
+
+* **Total Bookings:** 7.20M
+* **Offer to Booking Rate:** 28.39%
+* **Avg Bookings per Driver:** 196
+
+**Breakdowns:**
+
+* Marketing: 5.9M bookings
+* Non-marketing: 1.3M bookings
+* Germany leads with **4.7M bookings**
+
+**Weekday Trends:**
+
+* Highest bookings: *Friday & Saturday (~1.14M – 1.15M)*
+* Lowest bookings: *Sunday (~0.77M)*
+
+---
+
+### 4️⃣ **Rides Completed Page**
+
+**KPIs:**
+
+* **Total Rides Completed:** 5.90M
+* **Avg Rides per Driver:** 185
+* **Ride Completion Rate:** 81.06%
+
+**Insights:**
+
+* Marketing drivers: **1.79M rides**
+* Non-marketing drivers: **0.28M rides**
+* Peak completion days:
+
+  * Friday: 0.35M
+  * Thursday: 0.31M
+
+**Per Month:**
+
+* Highest ride volume in **January (0.65M)** and **June (0.64M)**.
+
+---
+
+### 5️⃣ **Cancellations Page**
+
+**KPIs:**
+
+* **Total Cancellations:** 1.32M
+* **Passenger cancellations:** 761K
+* **Driver cancellations:** 559K
+* **Cancellation Rate:** 18.32%
+
+**Insights:**
+
+* Highest cancellations occurred in **January (0.40M)** and **March (0.44M)**.
+* Top 10 drivers contributed **6,390 cancellations**.
+* Germany had **0.83M cancellations**, larger than Spain.
+
+---
+
+### 6️⃣ **Marketing vs. Non-Marketing Impact Page**
+
+**Highlights:**
+
+* **Booking Growth from Marketing:** 4.54M
+* **Drivers Accepted Marketing:** 26.13K
+* **Incremental Booking Increase per Marketing Driver:** 340.89%
+* Marketing drivers consistently outperform non-marketing drivers across:
+
+  * Offers
+  * Bookings
+
+## 🧹 **Data Cleaning & Modeling**
+
+* Removed duplicates and handled missing values
+* Corrected data types and normalized date formats
+* Created a star schema:
+
+  * **Fact Tables:** Offers, Bookings, Rides, Cancellations
+  * **Dimension Tables:** Drivers, Calendar, Country, Service Type, Marketing Flags
+
+## 📈 **DAX Measures Used**
+
+Some of the major measures include:
+
+Total Bookings = SUM(Bookings[booking_count])
+
+Total Rides Completed = SUM(Rides[ride_count])
+
+Completion Rate = DIVIDE([Total Rides Completed], [Total Bookings])
+
+Offer to Booking Rate = DIVIDE([Total Bookings], [Total Offers])
+
+Cancellation Rate = DIVIDE([Total Cancellations], [Total Bookings])
+```
+
+(Actual formulas may vary depending on your data model.)
+
+
+## 🧾 **Project Outcomes**
+
+* Clear understanding of marketing effectiveness
+* Identification of high performing drivers
+* Ride and booking trends helpful for forecasting demand
+* Actionable business recommendations:
+
+  * Target campaigns during low booking months, noting that bookings were high on January 1 due to New Year and decreased in March due to COVID
+  * Improve driver onboarding to reduce zero-ride drivers
+  * Monitor top cancellation drivers to reduce losses
+  * Consider weekday trends, as Wednesdays show higher bookings because January 1 fell on a Wednesday
+
+## 📎 **Files Included**
+
+* PDF Report: *RideIt Project Dashboard*
+* `.pbix` Power BI file
+
+
+## 🤝 **Contributing**
+
+Contributions and suggestions are welcome! Feel free to open issues or submit pull requests.
+
+## 📧 **Contact**
+
+Ajay Sammeta
+Data Analyst
+www.linkedin.com/in/ajay-sammeta-6b1369237
